@@ -1,0 +1,8 @@
+<ul>
+  {{#foreach posts}}
+  <li>
+    <span class="date">{{date published_at format="MMMM DD, YYYY"}}</span>
+    <a href="{{ url }}">{{ title }}</a>
+  </li>
+  {{/foreach}}
+</ul>

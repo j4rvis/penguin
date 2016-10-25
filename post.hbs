@@ -1,0 +1,24 @@
+{{!< default}}
+
+{{#post}}
+<div class="post">
+	<div class="post__back">
+  	<a href="/">&lt;-- home</a>
+  </div>
+  <div class="post__title">
+  	<h1>{{ title }}</h1>
+  </div>
+  <div class="post__date">
+      <p>{{date format="MMMM DD YYYY"}}</p>
+  </div>
+  <div class="post__date">
+  	<p>{{tags prefix=" in "}}</p>
+  </div>
+  <div class="post__meta">
+  	<p>{{ tags_content }}</p>
+  </div>
+  <div class="post__content">
+      {{ content }}
+  </div>
+</div>
+{{/post}}

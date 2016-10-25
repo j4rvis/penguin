@@ -1,0 +1,29 @@
+{
+  "name": "basic-ghost-theme",
+  "version": "0.1.0",
+  "description": "A basic ghost theme based on Micah Cowell's Basic Jekyll Theme",
+  "engines": {
+    "ghost": ">=0.9.0 <1.0.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Michael Schwarz",
+    "email": "mail@schwarz-micha.de",
+    "url": "http://schwarz-micha.de"
+  },
+  "keywords": [
+      "ghost",
+      "theme"
+  ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/j4rvis/BasicGhostTheme.git"
+  },
+  "bugs": "https://github.com/j4rvis/BasicGhostTheme/issues",
+  "contributors": "https://github.com/j4rvis/BasicGhostTheme/graphs/contributors",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}

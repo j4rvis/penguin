@@ -1,0 +1,22 @@
+---
+layout: post
+---
+
+<div class="recipe-content">
+  <div class="description">
+    <h2>Beschreibung</h2>
+    {{ page.description }}
+  </div>
+  <div class="manual">
+    <h2>Zubereitung</h2>
+    {{ content }}
+  </div>
+  <div class="ingredients">
+    <h2> Zutaten </h2>
+    <ul>
+      {% for ingredient in page.ingredients %}
+        <li> {{ ingredient }} </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
