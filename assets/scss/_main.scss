@@ -179,18 +179,19 @@ ul {
 		ul, ol {
 			font-size: 1em;
 			margin-left: 30px;
-			// margin-top: -10px;
-			// margin-bottom: 15px;
+			margin-bottom: 20px;
 			li {
 				padding: 5px;
-				padding-left: 5px;
+				ul {
+					margin-bottom: -5px;
+				}
 				@media screen and (max-width: $br) {
 					padding: 10px 0 10px 0;
 				}
 			}
 		}
 		ul {
-			list-style: circle;
+			list-style-type: initial;
 		}
 		ol {
 			margin-left: 35px;

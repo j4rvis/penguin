@@ -169,15 +169,17 @@ ul {
       font-style: italic; }
     .post__content ul, .post__content ol {
       font-size: 1em;
-      margin-left: 30px; }
+      margin-left: 30px;
+      margin-bottom: 20px; }
       .post__content ul li, .post__content ol li {
-        padding: 5px;
-        padding-left: 5px; }
+        padding: 5px; }
+        .post__content ul li ul, .post__content ol li ul {
+          margin-bottom: -5px; }
         @media screen and (max-width: 600px) {
           .post__content ul li, .post__content ol li {
             padding: 10px 0 10px 0; } }
     .post__content ul {
-      list-style: circle; }
+      list-style-type: initial; }
     .post__content ol {
       margin-left: 35px; }
     .post__content img {
