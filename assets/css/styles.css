@@ -189,6 +189,10 @@ ul {
           max-width: 100%;
           width: 100%;
           margin: auto; } }
+    .post__content blockquote {
+      padding-left: 20px;
+      font-size: 1.3em;
+      font-style: italic; }
     .post__content code {
       font-size: 1em;
       border-radius: 3px;
