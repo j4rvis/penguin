@@ -44,7 +44,11 @@ ul {
 
 .wrapper {
 	max-width: 800px;
-	margin: auto;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 2;
 	padding: 60px 30px 60px 30px;
 	@media screen and (max-width: $br) {
 		padding: 20px;

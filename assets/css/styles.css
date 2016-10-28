@@ -74,7 +74,11 @@ ul {
 
 .wrapper {
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
   padding: 60px 30px 60px 30px; }
   @media screen and (max-width: 600px) {
     .wrapper {
@@ -287,3 +291,26 @@ ul {
     order: 1; }
   .ingredients {
     order: 2; } }
+
+canvas, .c2 {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+.reflection-wrapper {
+  display: none;
+  max-height: 100px;
+  overflow: hidden; }
+
+.c1 {
+  z-index: 1;
+  position: fixed;
+  top: 0; }
+
+.c2 {
+  transform: rotate3d(1, 0, 0, 0deg) rotate3d(0, 1, 0, 180deg) rotate3d(0, 0, 1, 180deg);
+  backface-visibility: visible;
+  opacity: .4;
+  filter: blur(1px);
+  z-index: 15;
+  position: relative; }

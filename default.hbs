@@ -27,7 +27,11 @@
 <body>
 
     <div class="wrapper">
-        {{{ body }}}
+      {{{ body }}}
+    </div>
+    <canvas class="c1"></canvas>
+    <div class="reflection-wrapper">
+      <canvas class="c2"></canvas>
     </div>
 
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
@@ -35,6 +39,7 @@
     <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
+    <script type="text/javascript" src="{{asset "js/pixelrain.js"}}"></script>
 
 </body>
 </html>
