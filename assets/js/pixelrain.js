@@ -215,4 +215,6 @@ Math.randomRange = function(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-window.requestAnimationFrame(update);
+if(pixelrain_config.activated){
+  window.requestAnimationFrame(update);
+}
