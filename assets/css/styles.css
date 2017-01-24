@@ -264,6 +264,15 @@ ul {
   .ingredients {
     order: 2; } }
 
+.post-element .post-element-date {
+  margin-right: 20px; }
+
+.post-element .post-element-edit {
+  padding: 3px 5px;
+  background-color: #1a0dab;
+  color: white;
+  border-radius: 5px; }
+
 .recipe-content {
   margin-top: -30px;
   display: -webkit-box;
