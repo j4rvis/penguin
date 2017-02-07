@@ -270,6 +270,8 @@ ul {
     order: 2; } }
 
 .post-element .post-element-date {
+  width: 150px;
+  display: inline-block;
   margin-right: 20px; }
 
 .post-element .post-element-edit {

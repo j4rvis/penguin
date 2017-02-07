@@ -1,6 +1,6 @@
 {
   "name": "basic-ghost-theme",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A basic ghost theme based on Micah Cowell's Basic Jekyll Theme",
   "engines": {
     "ghost": ">=0.9.0 <1.0.0"
