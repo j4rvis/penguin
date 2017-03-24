@@ -37,7 +37,7 @@ table {
 body {
   color: #272727;
   background: #FFFFFF;
-  font-family: "Inconsolata";
+  font-family: 'Ubuntu';
   font-size: 100%;
   font-weight: 400; }
 
@@ -66,8 +66,7 @@ a {
 ul {
   list-style: none; }
   ul li {
-    padding: 5px;
-    padding-left: 10px; }
+    padding: 5px 0; }
     @media screen and (max-width: 600px) {
       ul li {
         padding: 10px 0 10px 0; } }
@@ -85,34 +84,45 @@ ul {
       padding: 20px; } }
 
 .header {
-  display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  display: flex; }
   @media screen and (max-width: 600px) {
     .header {
       display: block; } }
-  .header h1 {
+  .header .header-title h1 {
     font-size: 2em;
     margin-bottom: 0; }
+  .header .header-title .header-icons {
+    margin-top: 10px; }
+    .header .header-title .header-icons a {
+      margin-right: 10px; }
   .header ul {
     margin-top: 10px; }
     .header ul li {
+      font-size: 1.3em;
       display: inline;
       padding: 0;
-      padding-left: 5px; }
+      margin-right: 5px; }
 
-.blog {
-  padding-bottom: 30px; }
-  .blog h1 {
-    font-size: 1.4em;
-    margin-bottom: 5px; }
-  @media screen and (max-width: 600px) {
-    .blog div {
-      padding: 10px 0 10px 0; } }
-  @media screen and (max-width: 600px) {
-    .blog ul a {
-      display: block; } }
+.blog .about-me {
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 0 40px;
+  margin-bottom: 40px; }
+
+.blog h1 {
+  font-size: 1.4em;
+  margin-bottom: 5px; }
+
+@media screen and (max-width: 600px) {
+  .blog div {
+    padding: 10px 0 10px 0; } }
+
+@media screen and (max-width: 600px) {
+  .blog ul a {
+    display: block; } }
 
 .music {
   padding-bottom: 30px; }
@@ -241,92 +251,9 @@ ul {
     line-height: 150%;
     margin-bottom: 10px; }
 
-.recipe-content {
-  margin-top: -30px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap; }
-  .recipe-content > * {
-    padding: 10px 10px 10px 0;
-    flex: 1 100%; }
-  .recipe-content .manual {
-    order: 2; }
-  .recipe-content .ingredients li {
-    margin-left: 10px; }
-
-@media all and (min-width: 600px) {
-  .ingredients {
-    flex: 1 auto; } }
-
-@media all and (min-width: 800px) {
-  .manual {
-    flex: 1 300px;
-    order: 1; }
-  .ingredients {
-    order: 2; } }
-
-.post-element .post-element-date {
-  width: 150px;
-  display: inline-block;
-  margin-right: 20px; }
-
-.post-element .post-element-edit {
-  padding: 3px 5px;
-  background-color: #1a0dab;
-  color: white;
-  border-radius: 5px; }
-
-.recipe-content {
-  margin-top: -30px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap; }
-  .recipe-content > * {
-    padding: 10px 10px 10px 0;
-    flex: 1 100%; }
-  .recipe-content .manual {
-    order: 2; }
-  .recipe-content .ingredients li {
-    margin-left: 10px; }
-
-@media all and (min-width: 600px) {
-  .ingredients {
-    flex: 1 auto; } }
-
-@media all and (min-width: 800px) {
-  .manual {
-    flex: 1 300px;
-    order: 1; }
-  .ingredients {
-    order: 2; } }
-
-canvas, .c2 {
-  width: 100%;
-  height: 100%;
-  margin: 0; }
-
-.reflection-wrapper {
-  display: none;
-  max-height: 100px;
-  overflow: hidden; }
-
-.c1 {
-  z-index: 1;
-  position: fixed;
-  top: 0; }
-
-.c2 {
-  transform: rotate3d(1, 0, 0, 0deg) rotate3d(0, 1, 0, 180deg) rotate3d(0, 0, 1, 180deg);
-  backface-visibility: visible;
-  opacity: .4;
-  filter: blur(1px);
-  z-index: 15;
-  position: relative; }
+.post-element {
+  margin-bottom: 15px; }
+  .post-element .post-element-title {
+    font-size: 2em; }
+  .post-element .post-element-date {
+    font-style: oblique; }

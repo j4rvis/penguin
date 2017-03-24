@@ -18,6 +18,7 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/styles.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome/css/font-awesome.min.css"}}" />
     <link rel="stylesheet" type='text/css' href='https://fonts.googleapis.com/css?family=Inconsolata:400,700'>
     <link rel="stylesheet" type='text/css' href="{{asset "css/prism.css"}}"/>
 
@@ -27,6 +28,22 @@
 <body>
 
     <div class="wrapper">
+      <div class="header">
+        <div class="header-title">
+          <h1>{{@blog.title}}</h1>
+          <div class="header-icons">
+            <a href="https://github.com/j4rvis">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              j4rvis
+            </a>
+            <a href="https://twitter.com/iamj4rvis">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              iamj4rvis
+            </a>
+          </div>
+        </div>
+          {{navigation}}
+      </div>
       {{{ body }}}
     </div>
     <canvas class="c1"></canvas>
@@ -39,7 +56,6 @@
     <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
-    <script type="text/javascript" src="{{asset "js/pixelrain.js"}}"></script>
 
 </body>
 </html>

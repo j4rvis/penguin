@@ -1,9 +1,9 @@
 <ul>
     {{#foreach posts}}
         <li class="post-element">
-            <span class="post-element-date">{{date published_at format="MMMM DD, YYYY"}}</span>
-            <a class="post-element-title" href="{{ url }}">{{ title }}</a>
-            <a class="post-element-edit" href="/ghost/editor/{{id}}">Edit</a>
+            <p class="post-element-title"><a  href="{{ url }}">{{ title }}</a></p>
+            <p class="post-element-date">{{date published_at format="MMMM DD, YYYY"}}</p>
+            <p class="post-element-description"> {{excerpt}}</p>
         </li>
     {{/foreach}}
 </ul>

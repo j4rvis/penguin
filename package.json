@@ -1,7 +1,7 @@
 {
-  "name": "basic-ghost-theme",
-  "version": "0.1.5",
-  "description": "A basic ghost theme based on Micah Cowell's Basic Jekyll Theme",
+  "name": "penguin",
+  "version": "0.1.0",
+  "description": "A basic ghost theme.",
   "engines": {
     "ghost": ">=0.9.0 <1.0.0"
   },
@@ -9,7 +9,7 @@
   "author": {
     "name": "Michael Schwarz",
     "email": "mail@schwarz-micha.de",
-    "url": "http://schwarz-micha.de"
+    "url": "https://schwarz-micha.de"
   },
   "keywords": [
     "ghost",
@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/j4rvis/BasicGhostTheme.git"
+    "url": "https://github.com/j4rvis/penguin.git"
   },
-  "bugs": "https://github.com/j4rvis/BasicGhostTheme/issues",
-  "contributors": "https://github.com/j4rvis/BasicGhostTheme/graphs/contributors",
+  "bugs": "https://github.com/j4rvis/penguin/issues",
+  "contributors": "https://github.com/j4rvis/penguin/graphs/contributors",
   "dependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
